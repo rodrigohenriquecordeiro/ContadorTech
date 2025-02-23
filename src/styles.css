@@ -4,20 +4,142 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
 nav ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-    text-decoration: none; 
-    color: #333; 
+    text-decoration: none;
+    color: #fff;
 }
 
 nav a:hover {
-    color: #007BFF; 
+    color: #007BFF;
 }
 
+.principal {
+    background: #f4f4f4;
+    padding: 20px 0;
+}
+
+.principal h2 {
+    margin-bottom: 10px;
+}
+
+.principal p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.parte1, .parte2 {
+    padding: 20px 0;
+}
+
+.parte1 h2, .parte2 h2 {
+    margin-bottom: 10px;
+}
+
+.parte1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.parte1 li {
+    margin-bottom: 10px;
+}
+
+.rodape {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.rodape a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.formulario {
+    background: #f4f4f4;
+    padding: 20px 0;
+}
+
+.formulario h2 {
+    margin-bottom: 10px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+}
+
+.formulario input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
