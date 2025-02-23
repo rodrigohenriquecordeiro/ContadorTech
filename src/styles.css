@@ -14,6 +14,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header {
@@ -69,21 +72,43 @@ nav a:hover {
     background: #0056b3;
 }
 
-.parte1, .parte2 {
+.imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.servicos, .numeros {
     padding: 20px 0;
 }
 
-.parte1 h2, .parte2 h2 {
+.servicos h2, .numeros h2 {
     margin-bottom: 10px;
 }
 
-.parte1 ul {
+.servicos ul, .numeros ul {
     list-style: none;
     padding: 0;
 }
 
-.parte1 li {
+.servicos li, .numeros li {
     margin-bottom: 10px;
+}
+
+.numeros .texto {
+    text-align: right;
 }
 
 .rodape {
@@ -127,6 +152,10 @@ nav a:hover {
     border-radius: 5px;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -134,12 +163,25 @@ nav a:hover {
     }
 
     .container {
-        width: 100%;
-        padding: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .btn {
         width: 100%;
+        text-align: center;
+    }
+
+    .imagem img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto {
+        padding-right: 0;
+    }
+
+    .numeros .texto {
         text-align: center;
     }
 }
