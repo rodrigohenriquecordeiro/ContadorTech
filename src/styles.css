@@ -4,9 +4,40 @@
     box-sizing: border-box;
 }
 
-body {
+/* Fontes */
+.font-arial {
     font-family: Arial, sans-serif;
+}
+
+/* Cores */
+.bg-dark {
+    background: #333;
+}
+
+.bg-light {
+    background: #f4f4f4;
+}
+
+.bg-light-gray {
+    background: #f0f0f0;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-blue {
+    color: #007BFF;
+}
+
+.text-dark {
+    color: #000;
+}
+
+/* Estilos Gerais */
+body {
     line-height: 1.6;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -77,6 +108,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .imagem img {
@@ -107,8 +139,15 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.numeros .texto {
+.servicos .texto {
     text-align: right;
+}
+
+.numeros {
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    text-align: center;
+    font-style: italic;
 }
 
 .rodape {
@@ -134,11 +173,30 @@ nav a:hover {
 
 .formulario h2 {
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.formulario-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario-texto {
+    flex: 1;
+}
+
+.formulario-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .formulario form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 400px;
 }
 
 .formulario label {
@@ -181,7 +239,15 @@ nav a:hover {
         padding-right: 0;
     }
 
-    .numeros .texto {
+    .servicos .texto, .numeros .texto {
         text-align: center;
+    }
+
+    .formulario-content {
+        flex-direction: column;
+    }
+
+    .formulario-container {
+        align-items: center;
     }
 }

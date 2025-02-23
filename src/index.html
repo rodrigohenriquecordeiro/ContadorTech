@@ -9,23 +9,23 @@
     <link rel="icon" href="/img/Iconsmind-Outline-Coins.512.png" type="image/x-icon">
 </head>
 
-<body>
-    <header>
+<body class="font-arial">
+    <header class="bg-dark text-white">
         <div class="container">
             <h1>Contador Tech</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Página Inicial</a></li>
-                    <li><a href="#">Orçamento</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Nossos números</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#" class="text-white">Página Inicial</a></li>
+                    <li><a href="#" class="text-white">Orçamento</a></li>
+                    <li><a href="#" class="text-white">Serviços</a></li>
+                    <li><a href="#" class="text-white">Nossos números</a></li>
+                    <li><a href="#" class="text-white">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="principal">
+    <main class="principal bg-light">
         <div class="container">
             <div class="texto">
                 <h2>Especialistas em Contabilidade para Programadores</h2>
@@ -38,7 +38,7 @@
         </div>
     </main>
 
-    <section class="servicos">
+    <section class="servicos bg-light">
         <div class="container reverse">
             <div class="texto">
                 <h2>Nossos Serviços</h2>
@@ -55,7 +55,7 @@
         </div>
     </section>
 
-    <section class="numeros">
+    <section class="numeros bg-light-gray text-dark">
         <div class="container">
             <div class="texto">
                 <h2>Nossos Números</h2>
@@ -68,28 +68,34 @@
         </div>
     </section>
 
-    <section class="formulario" id="formulario-orcamento">
+    <section class="formulario bg-light" id="formulario-orcamento">
         <div class="container">
-            <h2>Solicitar Orçamento</h2>
-            <form>
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
-                
-                <button type="submit" class="btn">Enviar</button>
-            </form>
+            <div class="formulario-content">
+                <div class="formulario-texto">
+                    <h2>Solicitar Orçamento</h2>
+                </div>
+                <div class="formulario-container">
+                    <form>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                        
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="rodape">
+    <footer class="rodape bg-dark text-white">
         <div class="container">
-            <p>&copy; 2025 Contador Tech. Todos os direitos reservados.</p>
-            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+            <p>&copy; 2025 Contador Tech. Todos os direitos reservados a Rodrigo Henrique Cordeiro.</p>
+            <p><a href="#" class="text-white">Política de Privacidade</a> | <a href="#" class="text-white">Termos de Uso</a></p>
         </div>
     </footer>
 </body>
