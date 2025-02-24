@@ -125,7 +125,7 @@ nav a:hover {
     border: 1px solid #000;
     text-align: center;
     font-style: italic;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 40px 10px;
 }
 
 .texto-numeros {
@@ -150,7 +150,6 @@ nav a:hover {
 }
 
 .formulario {
-    background: var(--bg-secondary-color);
     padding: 20px 0;
 }
 
@@ -163,6 +162,8 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
+    background-color: var(--primary-color);
 }
 
 .formulario-texto {
