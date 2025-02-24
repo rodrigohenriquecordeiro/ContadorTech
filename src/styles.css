@@ -4,40 +4,17 @@
     box-sizing: border-box;
 }
 
-/* Fontes */
-.font-arial {
-    font-family: Arial, sans-serif;
-}
+:root {
+    --font: Arial, sans-serif;
+    --primary-color: #fff;
+    --secondary-color: #007BFF;
+    --bg-primary-color: #333;
+    --bg-secondary-color: #f4f4f4;
+  }
 
-/* Cores */
-.bg-dark {
-    background: #333;
-}
-
-.bg-light {
-    background: #f4f4f4;
-}
-
-.bg-light-gray {
-    background: #f0f0f0;
-}
-
-.text-white {
-    color: #fff;
-}
-
-.text-blue {
-    color: #007BFF;
-}
-
-.text-dark {
-    color: #000;
-}
-
-/* Estilos Gerais */
 body {
     line-height: 1.6;
-    font-family: Arial, sans-serif;
+    font-family: var(--font);
 }
 
 .container {
@@ -51,8 +28,8 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: var(--bg-primary-color);
+    color: var(--primary-color);
     padding: 10px 0;
 }
 
@@ -70,15 +47,15 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--primary-color)
 }
 
 nav a:hover {
-    color: #007BFF;
+    color: var(--secondary-color);
 }
 
 .principal {
-    background: #f4f4f4;
+    background: var(--primary-color);
     padding: 20px 0;
 }
 
@@ -93,14 +70,14 @@ nav a:hover {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #007BFF;
-    color: #fff;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background: #0056b3;
+    background: var(--secondary-color);
 }
 
 .imagem {
@@ -144,7 +121,7 @@ nav a:hover {
 }
 
 .numeros {
-    background-color: #f0f0f0;
+    background-color: var(--bg-secondary-color);
     border: 1px solid #000;
     text-align: center;
     font-style: italic;
@@ -157,14 +134,14 @@ nav a:hover {
 }
 
 .rodape {
-    background: #333;
-    color: #fff;
+    background: var(--bg-primary-color);
+    color: var(--primary-color);
     padding: 10px 0;
     text-align: center;
 }
 
 .rodape a {
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -173,7 +150,7 @@ nav a:hover {
 }
 
 .formulario {
-    background: #f4f4f4;
+    background: var(--bg-secondary-color);
     padding: 20px 0;
 }
 
@@ -196,7 +173,7 @@ nav a:hover {
     flex: 1;
     display: flex;
     justify-content: center;
-    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+    padding: 0 20px; 
 }
 
 .formulario form {
